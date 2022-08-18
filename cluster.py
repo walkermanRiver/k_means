@@ -114,12 +114,12 @@ def get_cluster_data(clustering_obj, book_data,
     return cluster_details
  
 def print_cluster_data(cluster_data):
-    # print cluster details
+    # print ml details
     for cluster_num, cluster_details in cluster_data.items():
         print('Cluster {} details:'.format(cluster_num))
         print('-' * 20)
         print('Key features:', cluster_details['key_features'])
-        print('book in this cluster:')
+        print('book in this ml:')
         print(', '.join(cluster_details['books']))
         print('=' * 40)
  
@@ -148,14 +148,14 @@ def plot_clusters(num_clusters, feature_matrix,
     # get coordinates of clusters in new low-dimensional space
     plot_positions = mds.fit_transform(cosine_distance)
     x_pos, y_pos = plot_positions[:, 0], plot_positions[:, 1]
-    # build cluster plotting data
+    # build ml plotting data
     cluster_color_map = {}
     cluster_name_map = {}
     for cluster_num, cluster_details in cluster_data[0:500].items():
-        # assign cluster features to unique label
+        # assign ml features to unique label
         cluster_color_map[cluster_num] = generate_random_color()
         cluster_name_map[cluster_num] = ', '.join(cluster_details['key_features'][:5]).strip()
-    # map each unique cluster label with its coordinates and books
+    # map each unique ml label with its coordinates and books
     cluster_plot_frame = pd.DataFrame({'x': x_pos,
                                        'y': y_pos,
                                        'label': book_data['Cluster'].values.tolist(),
@@ -165,7 +165,7 @@ def plot_clusters(num_clusters, feature_matrix,
     # set plot figure size and axes
     fig, ax = plt.subplots(figsize=plot_size)
     ax.margins(0.05)
-    # plot each cluster using co-ordinates and book titles
+    # plot each ml using co-ordinates and book titles
     for cluster_num, cluster_frame in grouped_plot_frame:
         marker = markers[cluster_num] if cluster_num < len(markers) \
             else np.random.choice(markers, size=1)[0]
