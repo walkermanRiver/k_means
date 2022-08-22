@@ -6,8 +6,8 @@ from collections import Counter
 from ml import training_data_feature_constant
 
 # 第一步：读取数据
-training_data = pd.read_csv(training_data_feature_constant.TRAINING_DATA_FILE).astype(str)   # 读取文件
-content_column = training_data_feature_constant.CONTENT_COLUMN
+training_data = pd.read_csv(training_data_feature_constant.TRAINING_DATA_FILE).astype(str)  # 读取文件
+# content_column = training_data_feature_constant.CONTENT_COLUMN
 # training_data = pd.read_csv('data/data.csv')  # 读取文件
 # content_column = "content"
 
@@ -15,8 +15,11 @@ content_column = training_data_feature_constant.CONTENT_COLUMN
 print(training_data.head())
 print("csv数据", os.linesep, training_data)
 
-
-data_content = training_data[content_column].tolist()
+# training_data["content"] = training_data["Summary"].map(str) + training_data["Description"].map(str)
+training_data[training_data_feature_constant.ML_NEW_CONTENT_COLUMN] = \
+    training_data[training_data_feature_constant.CONTENT_COLUMN].map(str).\
+    str.cat([training_data[training_data_feature_constant.CONTENT_COLUMN_2]], sep=' ')
+data_content = training_data[training_data_feature_constant.ML_NEW_CONTENT_COLUMN].tolist()
 # data_content = [str(a) for a in training_data[content_column].toList()]
 
 # 第二步：数据载入、分词

@@ -72,7 +72,9 @@ def print_cluster_data(cluster_data):
         print('-' * 20)
         print('Key features:', cluster_details['key_features'])
         print('data in this ml:')
-        print(', '.join(cluster_details['data_id']))
+        for id_Str in cluster_details['data_id']:
+            print("     " + id_Str)
+        # print(', '.join(cluster_details['data_id']))
         print('=' * 40)
 
 
