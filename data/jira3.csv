@@ -1,0 +1,170 @@
+Summary,Issue key,Issue Type,Status,Project key,Project name,Project type,Project description,Project url,Priority,Description
+[Fiori Horizon] Support for view and embed toolbars/dialogs/menus,FPA34-7771,User Story,Open,FPA34,FPA34 - SAP Analytics Cloud Product Mgmt (Derek),software,Augmented BI and Planning for SAC,https://ifp.wdf.sap.corp/cprojects?sap-client=001&STARTVIEW=Projects&OBJECT_TYPE=TTO&GUID=6CAE8B27FCC31ED59D8BCB674218022A&sap-language=EN,High,"Provide support to change the view and embed toolbars/dialogs/menus to the Fiori Horizon themes (morning, evening).
+The scope is to do this for Story 2.0 toolbars, menus and dialogs. As we will only be able to deliver this for the embedding scenarios, components that are only available in enterprise and not embedded are out of scope.
+Support for horizon themes was committed to S/4 and is planned to be delivered with story 2.0 in H1 2023. The upgrade to horizon can be started after an upgrade of UI5 planned for the early waves of Q1 2023.
+h3. ux doc
+https://www.figma.com/proto/e9mla57Sd5a6qbApnjo8ns/Fiori-Horizon-Stories-View-Time-Toolbar?page-id=0%3A1&node-id=22%3A3102&viewport=98%2C332%2C0.07&scaling=contain"
+Enable Fiori Horizon for SAC,FPA34-7831,Epic,Open,FPA34,FPA34 - SAP Analytics Cloud Product Mgmt (Derek),software,Augmented BI and Planning for SAC,https://ifp.wdf.sap.corp/cprojects?sap-client=001&STARTVIEW=Projects&OBJECT_TYPE=TTO&GUID=6CAE8B27FCC31ED59D8BCB674218022A&sap-language=EN,Medium,"h3. Requirements
+As an end user I want to be able to consume SAC in the Fiori Horizon Themes (Morning, Evening, High Contrast)
+As an embedding LoB I want SAC to adapt to the theme selected in the LoB tenant especially the Horizon themes.
+As a product reusing SAC screens, I want SAC to be able to support the Fiori (Horizon) Themes. (DWC requirements)
+h3. Current Situation
+SAC cannot switch between different Themes as most screens do not support theming.
+SAC cannot fully support Fiori Horizon as the UI5 version is too low. (Status August 2022)
+SAC Story Canvas Elements do not have sufficient styling options to create the Horizon Look and Feel
+h3. Currently planned workstreams (August 2022)
+* Upgrade UI5 to be able to support Fiori Horizon [FPA00-47440]
+* Work on making the SAC Story 2.0 View Toolbars Fiori Horizon Supported [FPA34-7771]
+* Add styling options to allow designers to create a Story canvas theme aligned with Fiori Horizon [FPA34-7314]
+* Deliver Fiori Horizon canvas themes to each SAC tenant for Designer to reuse [FPA34-7769]
+[The structure of all requirements can be found in this mural.|https://app.mural.co/invitation/mural/sap10/1660215098930?sender=annaburkhardt8170&key=8e9a2635-2fdb-4253-afea-7986f50a168a]
+[The presentation on the first phase Horizon approach for story view can be found here.|https://sap.sharepoint.com/:p:/t/ProductStrategyAugmentedBI/EVKP6B5DvvtHsadmDIHJu3kBZHCXvayd7Fe2IyV30KwPOg?e=FUf3bY]"
+[Fiori Horizon] OEM Story Canvas Support,FPA34-7830,User Story,Open,FPA34,FPA34 - SAP Analytics Cloud Product Mgmt (Derek),software,Augmented BI and Planning for SAC,https://ifp.wdf.sap.corp/cprojects?sap-client=001&STARTVIEW=Projects&OBJECT_TYPE=TTO&GUID=6CAE8B27FCC31ED59D8BCB674218022A&sap-language=EN,High,"We need to enhance the styling options in the story to be able to create Fiori Horizon canvas themes for the Embedded Scenarios.
+The plan is to deliver canvas theming to the LoBs with the release of story 2.0 (currently planned for Q3 2023; status August 2022).
+The linked Jiras are all prerequisites to achieve a look that is close to Fiori Horizon."
+[Fiori Horizon] Support Horizon themes for Story Canvas,FPA34-7314,Epic,Open,FPA34,FPA34 - SAP Analytics Cloud Product Mgmt (Derek),software,Augmented BI and Planning for SAC,https://ifp.wdf.sap.corp/cprojects?sap-client=001&STARTVIEW=Projects&OBJECT_TYPE=TTO&GUID=6CAE8B27FCC31ED59D8BCB674218022A&sap-language=EN,High,"We need to support the fiori horizon themes (morning, evening, high contrast black and white) for the story canvas. We therefore need to support the specific styling options required for fiori as part of our theming solution and as widget settings. It is defined in detail where a setting needs to be available (theme preferences and/or CSS and potentially widget styling) 
+The requirements are derived from a gap analysis and aim at closing the biggest gaps and to get close to the Horizon look and feel. Some small deviations from the defined Horizon look will not be closed.
+Additionally we need to make sure that the default proposed colors are aligned with the fiori horizon morning and evening colors. 
+The work is split up into three larger areas
+* Creating the themes in SAC and shipping them to all enterprise tenants
+* Delivering styling option enhancements necessary to make the themes work for OEM scenarios (reduced scope as  only certain widgets are available in the embedding scenrios)
+* Delivering styling option enhancements to make themes work for the enterprise scope (all widgets of story 2.0 need to have sufficient styling options to show up in Horizon)
+Another work stream is aimed at enabling the horizon themes for the toolbar and the rest of the application.
+------------------
+
+Information about the Fiori Horizon theme can be found here:锟斤拷
+[https://github.wdf.sap.corp/pages/D066787/FN4WPresentationLayer/]锟斤拷
+And here:锟斤拷[Horizon (wip) - Visual Core - Wiki@SAP|https://wiki.wdf.sap.corp/wiki/pages/viewpage.action?pageId=2599409231]
+
+This presentation also gives a good impression:锟斤拷[2021-11-9 Design SLT Core Controls.pptx (sharepoint.com)|https://sap-my.sharepoint.com/:p:/p/kai_richter/EYEqX7-6wdVBiWXySK_bAPsBWUnqWBva0Lrj_sRQGeAGuw?e=9grizh]
+
+Current design prototypes of the SAC UX team are reachable from this file: [SAC 锟斤拷锟?Horizon Theme Master 锟斤拷锟?FPA 00-12345 锟斤拷锟?Figma|https://www.figma.com/file/CU6VJtI1UjuueXZ74faGms/SAC-%E2%80%93-Horizon-Theme-Mast227%3A37814]
+
+[锟斤拷锟?锟斤拷锟斤拷锟斤拷 Design 锟斤拷锟?S4 Embedded V1 & V2 Scope - SAC 锟斤拷锟?Horizon Theme Master 锟斤拷锟?FPA 00-12345 (figma.com)|https://www.figma.com/proto/CU6VJtI1UjuueXZ74faGms/SAC-%E2%80%93-Horizon-Theme-Master-%E2%80%93-FPA-00-12345?node-id=291%3A59584&scaling=min-zoom&page-id=291%3A55978]
+
+Old, draft project plan from John Julian: [SAC Horizon Theme Overview 锟斤拷锟?Figma|https://www.figma.com/file/XUl9xc0DOIsausVBfh1ePn/SAC-Horizon-Theme-Overview?node-id=0%3A1]
+
+Official original UX scope document: [https://sap.sharepoint.com/:b:/r/teams/ProductStrategyAugmentedBI/Shared%20Documents/Product/Fiori%20Horizon%20support/Fiori%20Horizon%20Scope%20from%20UX.pdf?csf=1&web=1&e=oenOJT]锟斤拷
+
+*Proposed options for 2022 Q3QRC are available here:*锟斤拷
+[Fiori Horizon look-and-feel for SAC.pptx|https://sap.sharepoint.com/:p:/r/teams/ProductStrategyAugmentedBI/Shared%20Documents/Product/Fiori%20Horizon%20support/Fiori%20Horizon%20look-and-feel%20for%20SAC.pptx?d=wfb4bfdba134 specific information:*
+
+S4HANA Cloud is planning to release Horizon to customers with their 2208 release (August 2022).
+S4 PM responsible for UX: Christian Hoffmann.锟斤拷
+This system already has Horizon enabled: [https://ccf-725.wdf.sap.corp/]
+锟"
+[Fiori Horizon] Create and deliver Fiori Canvas themes to all tenants,FPA34-7769,User Story,In Progress,FPA34,FPA34 - SAP Analytics Cloud Product Mgmt (Derek),software,Augmented BI and Planning for SAC,https://ifp.wdf.sap.corp/cprojects?sap-client=001&STARTVIEW=Projects&OBJECT_TYPE=TTO&GUID=6CAE8B27FCC31ED59D8BCB674218022A&sap-language=EN,High,"Create a theme for Fiori Horizon morning, evening and high contrast white and black for story 2.0. These themes contain all the default styles required for achieving the theme in a story 2.0.
+
+All four themes need to be delivered as the standard to SAC customer systems. 
+
+Styling for Horizon morning and evening should be done in the theme preferences where possible. CSS is only acceptable for styles not available to a designer in the widget preferences.
+
+This is one of the top requirements to make Fiori horizon work on the story canvas and was committed to S/4. Horizon is planned to be delivered to S/4 in Q1 or Q2 2023.
+
+"
+Data Analyzer for SAC embedded for LOBs - Phase1 ,FPA34-7518,User Story,Open,FPA34,FPA34 - SAP Analytics Cloud Product Mgmt (Derek),software,Augmented BI and Planning for SAC,https://ifp.wdf.sap.corp/cprojects?sap-client=001&STARTVIEW=Projects&OBJECT_TYPE=TTO&GUID=6CAE8B27FCC31ED59D8BCB674218022A&sap-language=EN,High,"With SAC moving to Optimize Experience, Explorer is being retired. However, this is one critical component that is heavily used by some LOBs (S4, SFSF, etc) and one of the very important asks from others (Ariba, fieldglass, Concur etc.).锟斤拷
+
+Hence, Its important for the Data Analyzer, which is being developed to replace explorer, should cater to the workflow needs for embedded usecases.锟斤拷
+
+Note that today Data Insights are not listed or displayed in embedded workflows. Which means there is no way for LOBs to use the Independent/Standalone data analyzer today.
+
+Today, the exploration triggers primarily from within stories, from the right click context of SAC tables and charts.锟斤拷
+
+Considering this usage, following are the high priority requirements that are required for LOBs to even start considering data analyzer as replacement of explorer锟斤拷
+ * Support data analyzer to work with *embedded models* for different live connections
+ ** on +extended+ HANA live connectivity, used by Concur, A, SFSF (PM Contacts: [~I038067] , [~I050471])
+ ** on BW live connectivity, used by S4HANA Cloud (PM Contacts: [~I035351])
+ ** on IBP live connectivity, used by IBP (PM Contacts: ** [~I326345] )
+ * Launch Data Analyzer from a chart锟斤拷锟絪/table锟斤拷锟絪 right click option and analyze the data behind the chart/table. While doing that the context/filters of the chart/table to be passed on to data analyzer.锟斤拷 锟斤拷 锟斤拷 锟斤拷 锟斤拷 锟斤拷 锟斤拷 锟斤拷 锟斤拷  !image-2022-04-11-16-45-08-879.png|width=434,height=222!
+ * Once in Data Analyzer, User should be able to navigate back to the story where he came from, and he expects to go back to the same state of the story. This is expected irrespective of whether the data analyzer view is saved by user or not.
+ * User should be able to navigate back from Insight to the story, irrespective of whether user saves insight or not
+ * During design time of the story, when user enabled Data Analyzer for a widget, allow him/her to configure dimensions and meahis is important as due to the nature of LOB models there may be too many dimensions, some just technical calculations etc. Which an LOB or designer may not want to expose for exploration. Capability exists today for explorer in SAC today.
+
+锟斤拷 锟斤拷 锟斤拷 锟斤拷 锟斤拷 锟斤拷 锟斤拷 锟斤拷 锟斤拷 锟斤拷 锟斤拷  !image-2022-04-11-16-44-06-842.png|width=356,height=232!
+ * Support standalone Data Insights, this is "
+[Fiori Horizon] Drop Shadow Support,FPA34-7767,User Story,Open,FPA34,FPA34 - SAP Analytics Cloud Product Mgmt (Derek),software,Augmented BI and Planning for SAC,https://ifp.wdf.sap.corp/cprojects?sap-client=001&STARTVIEW=Projects&OBJECT_TYPE=TTO&GUID=6CAE8B27FCC31ED59D8BCB674218022A&sap-language=EN,High,"Add styling option of drop shadows to stories in CSS for all widget types in Story 2.0.
+
+Enable shadow on widgets with x (horizontal displacement), y (vertical displacement), spread and blur.
+
+This can be made available for every widget but at least needs to be delivered for the following:
+* Chart
+* Geo
+* Table
+* Text
+* Input Control
+* Calculation Input Control
+* List Boxes
+* Flow Layout Panel
+* Checkbox Group
+* Radio Button Group
+* Input Field
+* Text Area
+* Filter Line
+* Sliders
+* Range Sliders
+* Tab Strip
+* Panel
+* Page Book
+* Comment Widget
+
+This is one of the top requirements to make fiori horizon work on the story canvas and was committed to S/4. Horizon is planned to be delivered to S/4 in Q1 or Q2 2023.
+
+h3. Why
+As part of the new Fiori horizon theme, Drop shadow support is required on widgets. 
+This can currently not be done with the capabilities we have in analytics designer or stories or with a content creators capability with manually creating a theme, thus - needs development support in order to meet this requirement. "
+SAC BI Calculation required to Calculate the date/time difference between 2 date time (timestamp) fields,FPA34-7814,User Story,Open,FPA34,FPA34 - SAP Analytics Cloud Product Mgmt (Derek),software,Augmented BI and Planning for SAC,https://ifp.wdf.sap.corp/cprojects?sap-client=001&STARTVIEW=Projects&OBJECT_TYPE=TTO&GUID=6CAE8B27FCC31ED59D8BCB674218022A&sap-language=EN,Very High,"*Problem Statement:*
+
+User would like to have a function to calculate difference between two datetime fields. Currently datediff function is able to calculate difference between two date fields only and result is in days.
+
+*Use Case and Requirement:*
+This is a requirement to introduce a calculation that allows to calculate difference between two date/time fields (for example: a timestamp) in the SAC story calculation editor. As a report designer in SAC, I should be able to create a calculation that provides difference b/w two date/time fields (for ex: ticket creation timestamp, ticket initial response timestamp, ticket resolution timestamp, etc.) in the SAC story calculation. This is especially important in applications catering to service scenarios, where there are multiple use cases to calculate the difference between any two date/time fields upto a granularity of hours, minutes and even seconds, for example to time taken for initial response to a customer ticket, time taken for ticket resolution etc. This is crucial to measure adherence to SLAs in many businesses. Also, it is important to introduce this calculation in the SAC story calculation editor, as that can also be applicable for embedded SAC use cases who do not have access to standard SAC modeler.
+
+Currently, in SAC it is only possible to calculate the difference between Date between (days between two fields) and not with date and time.
+
+*What already works?*
+
+Today, SAC has DateDiff calculation that works for HANA live connectivity, however this works only if the dimension if of type date and the difference can be found up till ""day"" level granularity.
+
+This also works for embedded SAC tenant in applications like C4C, using {+}extended HANA live connectivity{+}.
+
+!screenshot-1.png|thumbnail!
+
+*What does not work?*
+
+SAC Enterprise customers as well as SAC embedded customers (that include applications like C4C and many other LOB applications that are on HANA Cloud today) have important dimensions - date/time fields stored as timestamps (i.e. both date and time Ex: ticket creation, ticket initial response, ticket resolution, etc).
+
+A very common KPI for them is to calculate the response times, which means difference calculation between two timestamps. This cannot be done today in SAC for following reasons:
+ * DateDiff calculation does not support timestamp dimensions,
+ * DateDiff does not support hour, minutes and seconds for granularity.
+
+Although un-related, it should be noted that for the embedded SAC usecase, timestamps are not available as hierarchy in embedded SAC, specifically with extended HANA live connectivity.
+
+Hence, As a report designer for SAC, I should be able to create a calculation that provides difference between two date/time (timestamp) fields.
+
+*Priority*
+
+This need to be given very high priority because in the context of Customer Service related business process, datetime based KPI analysis is very important. For example to check the SLA compliance related to initial response time (it could be in minutes or hours. Not in days).
+
+This is also a highly voted for requirement from SAC Enterprise customers as can be seen in this influence request: [https://influence.sap.com/sap/ino/#/idea/258836]
+Customers who have voted for such a requirement include:
+ * Business Connexion (Pty) Ltd
+ * Cargolux Airlines International SA
+ * Catigo Analytics AB
+ * Cubis Solutions BV
+ * ERCROS, S.A.
+ * EnBW Energie Baden-W锟斤拷rttemberg AG
+ * GERMANS BOADA, S.A.
+ * HI PARTNERS HOLDCO VALUE ADDED SA
+ * ""SAPRUN GROUP""
+ * Logis GmbH
+ * Lufthansa Technik AG
+ * One World Technologies, Inc.
+ * RINEDATA LIMITED
+ * SAP
+ * SEIDOR CONSULTING, S.L.
+
+Also, in case of embedded SAC customers like C4C where embedded SAC is estimated to be used by over 2500 customers, C4C's current (not SAC) analytics solution allows users to calculate time difference between two time dimensions. A similar functionality is needed for SAC embedded in C4C. In the new C4C Service Cloud context, since C4C are relying only on SAC OEM (as they have not developed any alternative analytics offering in their new cloud native stack), lack of datetime difference calculation will be treated as a critical business feature limitation. Hence this is very important for CX Service Cloud use case perspective.
+
+*In Scope*
+
+Relevant for SAC enterprise and all LOB applications that use HANA Cloud today."

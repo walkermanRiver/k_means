@@ -10,6 +10,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from matplotlib.font_manager import FontProperties
 
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
+from ml import training_data_feature_constant
 
 
 def build_feature_matrix(documents, feature_type='frequency',
@@ -37,18 +38,18 @@ def k_means(feature_matrix, num_clusters=10):
     km = KMeans(n_clusters=num_clusters,
                 max_iter=10000)  # km打印结果是KMeans的参数
     km.fit(feature_matrix)
-    clusters = km.labels_  # 编号 [4 6 6 ... 2 2 2]
+    clusters = km.labels_
     return km, clusters
 
 
-def get_cluster_data(clustering_obj, book_data,
+def get_cluster_data(clustering_obj, training_data,
                      feature_names, num_clusters,
                      topn_features=10):
     cluster_details = {}
     # 获取cluster的center
     ordered_centroids = clustering_obj.cluster_centers_.argsort()[:, ::-1]
     # 获取每个cluster的关键特征
-    # 获取每个cluster的书
+    # 获取每个cluster的id
     for cluster_num in range(num_clusters):
         cluster_details[cluster_num] = {}
         cluster_details[cluster_num]['cluster_num'] = cluster_num
@@ -57,8 +58,9 @@ def get_cluster_data(clustering_obj, book_data,
                         in ordered_centroids[cluster_num, :topn_features]]
         cluster_details[cluster_num]['key_features'] = key_features
 
-        books = book_data[book_data['Cluster'] == cluster_num]['title'].values.tolist()
-        cluster_details[cluster_num]['books'] = books
+        # books = training_data[training_data['Cluster'] == cluster_num]['title'].values.tolist()
+        data_id = training_data[training_data['Cluster'] == cluster_num][training_data_feature_constant.ID_COLUMN].values.tolist()
+        cluster_details[cluster_num]['data_id'] = data_id
 
     return cluster_details
 
@@ -69,8 +71,8 @@ def print_cluster_data(cluster_data):
         print('Cluster {} details:'.format(cluster_num))
         print('-' * 20)
         print('Key features:', cluster_details['key_features'])
-        print('book in this ml:')
-        print(', '.join(cluster_details['books']))
+        print('data in this ml:')
+        print(', '.join(cluster_details['data_id']))
         print('=' * 40)
 
 
@@ -103,7 +105,7 @@ def plot_clusters(feature_matrix,
     cluster_plot_frame = pd.DataFrame({'x': x_pos,
                                        'y': y_pos,
                                        'label': book_data['Cluster'].values.tolist(),
-                                       'title': book_data['title'].values.tolist()
+                                       'data_id': book_data['data_id'].values.tolist()
                                        })
     grouped_plot_frame = cluster_plot_frame.groupby('label')
     # set plot figure size and axes
@@ -130,6 +132,6 @@ def plot_clusters(feature_matrix,
     for index in range(len(cluster_plot_frame)):
         ax.text(cluster_plot_frame.ix[index]['x'],
                 cluster_plot_frame.ix[index]['y'],
-                cluster_plot_frame.ix[index]['title'], size=8)
+                cluster_plot_frame.ix[index]['data_id'], size=8)
         # show the plot
     plt.show()
