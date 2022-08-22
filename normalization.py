@@ -2,6 +2,7 @@ import re
 import string
 import jieba
 
+
 # 加载停用词
 with open("dict/stop_words.utf8", encoding="utf8") as f:
     stopword_list = f.readlines()
