@@ -1,0 +1,728 @@
+Cluster 0 details:
+--------------------
+Key features: ['data', 'import', 'records', 'actions', 'action']
+data in this ml:
+     Ability to upload data using data management from different excels with similar names from onedrive
+     SAC tennat is not reacheble
+     Performance tips - modelling
+     Why is not possible to create several schedules for Data Flow?
+     Import Jobs for Local Dimensions
+     Data Management for Local Dimensions
+     Ability for non Admin users to be able to access Data Action
+     Multi Actions Monitor
+     Planning -  Multi Actions Enhancements
+     Calendar Multi Action Task Viewer should be able to see the data action status from data action monitor
+     Provide more functional enhancements in Script Editor
+     Unify Modules/File Repo
+     Unify Runtime Toolbar
+     Data Labels Overlap with Reference Line
+     Avoid Data Label Overlap when Screen Size Reduced
+     Date fields in query filter in SAC model should accept a dynamic date (like 'system date')
+     Allow free style entry via Planning.SetUserInput() Api
+     Rejected lines notification for data acquisition models
+     Load jobs from S/4 with Today as the selection date
+     Import Job Rollback in case of partial data imports
+     SAC job to run successfully in incremental load mode- when there is no new data in source
+     Forecast layout : allow display of different Forecast versions and comparizons between them
+     Data Actions "Ignore Data Locks" ON/OFF feature similar as tables
+     Lift restrictions on parallel import jobs
+     WFA Connector to support Incremental Load
+     Tested and published performance, scalability and reliability benchmarks (internal) and sizing guidance (external)
+     Unable to skip records when exporting to S/4 HANA (ACDOCP)
+     Enable download all rejected rows and track all imported data in Data changes
+     Import File Size Greater than 2GB
+     Publish Data Successfully shows even when their is no data to publish
+     Data Action in Export dialog shows ID insted of description
+     Data action fail : enhance the error message with number of data records
+     Apply data delta load to cross model copy
+     Scheduling Publications Delivery Rules - If No rows of data is  returned in any widget
+     CE: DPS relevant features
+     Insert Dynamic  text into scheduling publications email message subject and message body
+     Add user information to import/export job in Data Management
+     Planning: delete data API
+     Data point comments for HANA Live  as a data source
+     Update existing POI data
+     [Internal] ACN Usage Tracking
+========================================
+Cluster 1 details:
+--------------------
+Key features: ['input', 'users', 'story', 'export', 'request']
+data in this ml:
+     Support for MS SQL 2019
+     INVERSE function to work when calculated members are part of the overall formula
+     Ability to add long paragraphs /Narrative texts on a story in view mode
+     Teams, roles or user cannot be assigned to widgets
+     Disable "recent files" tile on mobile app home screen
+     Weighted Average Calcuataion/Input
+     Enterprise readiness on large scale deployments
+     Pls create tenant as soon as possible
+     Overwrite Global Bookmarks during transports
+     GetVariable value for non-input ready variable
+     Unify Bookmark Concept
+     Freezing a Lane (Header) to be visible always.
+     ACN Share Package with restrictions to download.
+     ACN - Resilience Customer Situation
+     Allow users to cancel the job.
+     Export as tgz to local folder feature in Content Network storage
+     Transport Rollback feature on Content Network Storage
+     As a Predictive Planning end-user, I would like to save predictions for past periods (in multi actions / predictive step)
+     As a Predictive Planning end-user, I would like to be able to auto-select all direct children or all descendants of a given node when defining Entity Filters
+     Year-to-date / Quarter-to-date / Month-to-date formulas in modeler
+     Support dimension dependent unit of measure conversion
+     Four-eyes principle for lifecycle management - ACN Approval workflow
+     Extend number of characters for Dimensions DAC READ/WRITE Columns beyond 256 characters
+     Publication authorization
+     A future enhancement to greyed out BW unsupported feature in SAC Import Modelling Query Builder
+     [Prompting] Clear/purge/delete prompt values/answers previously provided
+     Collection of proposed enhancements to Validation Rules
+     Transport of ACN Package Content across any landscape/ Hyperscalers
+     Deprecate Classic Import Export
+     [Prompting] Customer Exit variables and saved variables
+     Integration with SAP BTP CTMS ( Cloud Transport Management Service )
+     Copy one, paste Multiple
+     CARRYFORWARD logic on Account dimension member
+     Allow context parameter with "All members" when single selection setting is checked
+     Security enhancements to Measure Dimension in UAM/UMM
+     Enable missing measure formulas for the New Model: YoY, CAGR and SMA
+     LCM: To be able to include related security & permissions on folders when content is exported
+     CE: (Unidas) - Moot
+     Blending via Hot Wrangling
+     Can't move Calculation Input Control to another page
+     Improve SAC Application Startup Time for Slower Clients
+     Scheduling of jobs in SAC
+     Sort measures by value in stacked bar chart
+     Programatically control page visibility based on Customer
+     New role for SAC user to export data to PDF from story
+     Dynamic Text not updating with selection when component Pin to Home
+     Possibility to hide Tooltip information box that appears by default
+     Negative values not supported in Tree Map Chart- SAC on LIVE HANA
+     Setting of color group about background color on page etc with SAC
+     SAC Bookmark Options Dialogue Box
+     Calculated columns added in story not exported in xls/csv
+     Modeler: Have 'Percent' as an option for Scale in the BPCE Environment
+     Single Y-axis Combination Chart
+     Sort Order of Dimensions not retained in Dimension Input Controls
+     Integration of dynamic charts in Google Slide
+     Story comments in Digital Boardroom
+     Support zero suppression in the input controls of the dimension
+     Ability to export a Digital Boardroom presentation
+     Create stories referencing KPI widgets from a KPI widget library
+     Extend Bookmark Capabilities
+     Manual refresh in the story
+     Input Control - Apply button for input controls
+     Custom fonts in pdf export
+     Loss of format when exporting to Excel or PPT
+     Ability to add attachments on a story in view mode
+     To correctly download Report Headers from the SAC Story into Excel.
+     Waterfall Charts - Possibility to add Measure and Dimensions instead of restricted measures
+     Make global bookmarks accessible via URL -like personal bookmarks
+     Text wrapping / Line breaks should be considered in dynamic text
+     Make mouseover in widgets optional
+     Consistent Sorting / "Top N" on measure input control
+     Header and Footer for Responsive pages
+     Edit Axis for Radar Charts
+     Allow Fixed Date Range Filters in date dimension for selection of unbooked data
+     Set the display format for Null Value
+     Blended calculation not supported in Charts
+     Exclude members from Input Control
+     Use bookmark and page number in (external) hyperlinks
+     Option for text alignment of axis labels
+     Enable links in attributes
+     Add custom text in graph/tab tooltip
+     Switch OFF Auto dependencies select.
+      SAC HANA Import connection is not working for variables/input parameters with default values
+     Share File Server Connection
+     Support ACN Package sharing between Neo EUDP  & CF EUDP ( Vise Versa)
+     Rank creation based on a Measure in the Model
+     Use logged users????????? credentials while exporting data to another system (e
+     String Fields in Custom Fields from SAP SF
+     String Fields in Custom CDS Views for Analytical Scenarios
+     File Export schedule mass deletion
+     Missing functionality: Support Transport of POI object
+     GrandTotal() is calculated based on all the result set, no way to by pass a dimension
+     Sample report issue
+     Make UI5 and FIORI icon fonts available by default.
+     Avoid menu widget icon overlapping other widget content or comment actions
+     [UQM][R&S][RedBull]Retain sort order when user changes the rank value only (dimension of rank stays the same)
+     Rearranging columns across on time dimension. - Custom sort on Date dimension
+     Do not show GUID, but description for calculated measures in story.
+     Unable to export to custom fields in ACDOCP
+     Ability to create a calculation on cumulative figures
+     Allow resize input control dropdown list
+     Google Share -Shared Drive not available
+     HANA Live Cascading Variable
+     SAC Planning - Inverse Formula Support for YOY and CAGR
+     Flexible Unit of Measure
+     Cannot create Chart to show different Measures in X/Y axis as Account
+     Advance filtering and input control
+     Edit/Rewrangle Export Jobs
+     SAP Analytics cloud: Need ability to export and apply permissions at "Page" level within a "story"
+     Transport of Content in Private Folder
+     SAC Story Versioning
+     Overwriting story in a single tenant retains catalog, shares, recent stories, favorites
+     Auto-save option while editing story
+     Waterfall Charts in IBCS
+     Sorting with Field Selection Input Controls (Dimension and Measure)
+     Custom Scale Format
+     Add CURRENTDATE() to be used as a formula function
+     SCIM API create user with external id different from SAC userid
+     Copy and Paste Widgets from Application to Story
+     Enterprise Readiness for Analytic Content
+     [BW Live] Ability to use dimension members in a calculated measure
+     SAC - Sort Custom doesn't load
+     Export from BW to include display attributes when Scope All is set
+     SCIM API POST /Users (create user) should return 409 not 201 when email does not match existing userName
+     Scheduling Publications failure should send an email to Schedule Owner
+     Formatting by Calculated Conditions
+     CE: Blending Requirements
+     Upload of custom shapes (svg file including font definition)
+     Create Bookmarks in EMBED Mode
+     Bookmark show/hide columns in SAC Stories
+     Ease of consumption and content readability (view-time improvements )
+     Base BI
+     AppDesign to support table ExportToPDF including formatting
+     Change folder owner at any time
+     SCIM API PUT /Users/UserID with x-ignore-roles-if-missing=true need to respects Roles AND allow updates to isConcurrent
+     Scheduling Publications - HTML as the destination output
+     Here is the collection requirements for Input control
+     Hyperlink not working when exported to PDF from SAC Story
+     UX Improvement while creating Package
+     FUE Licensing - Scheduling Publications limits
+     Feature Request for Analytical Designer when exported to PDF
+     HANA Input parameter/ optional prompt not working with Multisource universe for SAC Model(LUC)
+     Insert Dynamic  Text for dimension members in Scheduling Publications emails
+     Embed App design widget/component in Standard Story
+     It's hard to find renamed entities
+     [Reporting] Export : self-service export performance improvement
+     ACN Support for SAC Workspace concept
+     Input Control for Cross Calculation
+     Commenting Widget for Input control as Measures
+     Customer requests "Select All" option in Select Member of Variable
+     Point story at new model with Measure & Dimension input controls fails
+     Calculation Input Control should be able to be reused in the calculated measures editor
+     [Reporting] Layout : Paginated canvas in Edit mode (quick display)
+     [Reporting] Export : Export UX improvements (UI, export digest,????
+     [Reporting] OEM : Responsive support > export paginated widget?
+     [Reporting] Layout : Summary of pages (table of content)
+     Dynamic text token takes too much space on mobile app
+========================================
+Cluster 2 details:
+--------------------
+Key features: ['sac', 'connection', 'table', 'data', 'user']
+data in this ml:
+     SAC BI Calculation required to Calculate the date/time difference between 2 date time (timestamp) fields
+     SAC loads 10K rows out of 260K rows (xlsx on GDrive)
+     Totals doesn't sum up Clients for Account member with "Last" aggregation
+     Delta updates from SAC model to back end
+     Oracle 19c support
+     Does Embedded Web Page support analytic application?
+     [BW Live] IBCS Styling for Single Elements on the Second Structure
+     Commenting Browser
+     Securely connect to Google BigQuery from SAC for Acquired Model
+     [BW Live] Range filter for all characteristics
+     CIC Access expired. Need access asap
+     Sync dimensions from SAP BW
+     SAC Planning - Possibility to change theme/color of changed cell highlighting
+     [Accessibility] Minimum and High Contrast Themes
+     Ability to "tier" workflows
+     [Accessibility] Story View Keyboard Support
+     SAC table alignment with DragonFly
+     Dynamic Scheduling Functionality
+     Support embedded models and extended HANA live connection for Story 2.0
+     As a predictive planning end-user I would like to filter out specific time periods
+     Currency Conversion table refactoring (exchange rates)
+     [DragonFly DA] Minimum Feature Scope Beta Version
+     [DragonFly DA] Feature Scope GA Version
+     [Prompting] Ability to show technical name of BW variables in prompts window
+     Planning with Subtotal and %SubTotal
+     [Table][Threshold] Option to turn-off the Tooltip on the Tables
+     Support use of Attribute() function when referencing time/date dimension
+     [Modeler] Manage mappings for the changed column names of a model
+     Set a Data Source Filter in Live Connection
+     SAC Admin Cockpit: Badly created stories (based on widgets)
+     Unbooked Data feature on Heat Map
+     Feature Request: Adding infobox to Conditional Formatting
+     Relative position feature for SAC
+     How to change dynamicaly the number scale according to filter applied on the story
+     [Security] Prevent data exfiltration when using SAC GBQ import connection
+     KPI Structure Definition in Data Analyzer
+     KPI Sequencing is not possible in data Analyzer
+     SAC Predictive Scenario based on result set of imported already predicted data
+     As a Predictive Planning end-user, I should be able to see either IDs or Descriptions in Entity Filters
+     As a end-user for Predictive Planning, I would like the predicted numbers to be auto-divided to dimensions that are not selected as entities
+     As a end-user for Predictive Planning, I would like to be better warned when some entities are too small
+     As a Predictive Planning end-user, I would like to be able to monitor the progress of apply in the user interface
+     Additional data sources for currency conversion rate tables
+     Multi-language master data for local dimensions
+     Create version directly in the model
+     Connection BW - Initial Password
+     Live connection to SAP Business Bydesign
+     Support MTLS connection with Qualtrics
+     Improve Compact Display in Analytic Applications for Live BW Connection
+     Alerting feature when Cloud agent is not reachable
+     Improve SAC Connection listing User experience
+     Derive exchange rate for missing currency combination from a different combination in currency table
+     Verion Management in Modeler (Version Dimension)
+     Version Control with merge option (Stories, Applications - support multiple dev tracks)
+     Enhance PlanningModel.updateMembers to support Version dimension
+     In SAC, automate/schedule the indexing of live models
+     Export Data API should export hierarchal parent of dimensions
+     Expand numeric format options and enable and allow configuration within styling panel
+     Enhance script variable types for Checkbox/Dropdown binding
+     Google Drive user credential management
+     Qualtrics Connector MTLS support
+     Import currency exchange rates from S/4HANA
+     User defined Areas for Geo Enrichment
+     [DPS] Dynamic Variables for input parameters in DWC Models
+     Unify Responsive Layout
+     API: Enable advanced sorting function for Arrays of most common data types/classes
+     Support multi-language description for Version dimension
+     Multi Language support for Master Data - Member Descriptions
+     SAC toggle OVERRIDE_IMPORT_VERSION_CHECK  in a REL environment
+     [BW Live] Ability to configure the text display (short/medium/long/extra long) (adaption on chart)
+     Enhance  Script API for DataSource.getMembers()/ PlanningModel.getMembers to return Base Members
+     Limit the visibility of Versions in a dropdown by considering the authorization
+     Automatic Data Locking for calendar tasks/processes
+     Provides Low Code /No Code capabilities in Story 2.0
+     Per Connection Analytic Privilege
+     Live Connectivity to SAP Solutions
+     Re-usability of analytic content objects
+     Major inconsistencies between data sources and elements actions in story
+     Incremental Load support for JDBC
+     SAC consumption of Concur OAuth APIs
+     Creation of non-credentialed, public, connection templates (like live connections)
+     Add credential sharing option to connections that don't have it
+     Dimension Hierarchy Editor Improvements - Model Admin
+     Improve dropdown box when create import job from existing query
+     Blending of Live BW in SAC using BW Workspaces
+     Connection Management Normalization
+     Use hidden pages in the Digital Boardroom
+     Create graph widget directly from a table widget
+     Support for Federal Information Processing System (FIPS) Codes for States and Counties
+     Disabling hierarchy drill down for dimensions/measures
+     [BW DA] Support more than one characteristic in master data import
+     Provide Widget for Changeing Entry Mode of a Table Widget
+     Hiding Dimensions in Drill for BW / BPC Live Connections
+     Unbooked Data feature on Measure Based Dimension
+     Swapping import job datasources in Dev to Prod transport
+     Extend type library TimeRange to support fiscal ranges as well (for filtering api)
+     Script API for hierarchy drill based on selection
+     Data Locking Script API behavior with selections
+     Make Script Objects/functions re-usable across multiple Analytic Applications
+     Characteristic As Keyfigure Copy & Paste from Excel
+     Characteristic As Keyfigure ValueHelp
+     SAC Native Planning: Date as Property for Dimensions for Validity Checks / locking
+     SAC Planning: Copy & Paste values while source in xls has (scaling) more than 7 digits
+     Debug authorizations analog to RSECADMIN
+     SAC Story BW BEx Variables not Linkable to HANA Model
+     SAC - Customizing Tables
+     Display SAP S/4HANA under system type when creating model using live connection
+     BW Import Connection: Sorting of Dimension(Structures in BW Query) in charts
+     Data Access Control -  retain  settings, when DAC is turned off
+     SAC embedded / respect Connection ID needed for Life-cycle management
+     OVM Save does not tell where the blocking widgets are
+     SAC AD Dropdown loading Performance issue
+     APIs for SAC artefacts creation
+     Planning - Security/Infrastructure/Platform Enhancements
+     Prevent Bad Gateway errors on long running import connections
+     Commenting Functionality with Authorization concept
+     Timestamp option in the now() Wrangler Expression Language
+     Add member feature: create an option to duplicate existing master data on the new member
+     SAC Planning - mixed usage of booked / unbooked members in rows/columns for mult dimensions
+     SAC Native Planning: Date Dimension in restricted Measure only no need for Date to be in rows/column of table but filter only
+     Enable Edit Member Order in live BW table when there are hierarchies defined
+     SAC Planning - Validation Rules as Result Set for Table, Date validity checks
+     New rows in tables for streamlined data entry
+     Drilling down on an account hierarchy in a table will also drill down totals
+     [DragonFly DA] Minimum Feature Scope Alpha Version
+     Default color -- WHITE / Black?
+     Sort based on ID, not text in charts and tables
+     [Table] Formatting - support custom order of dimensions and measures in a Table
+     Ascending/Descending, even filtering not working as expected in the table view of SAC story.
+     Allow users to share the content between SAC OEM/Data Plane and SAC Enterprise tenants
+     Here is the collection requirements for providing templates for analytics deisgner
+     Support SAP Data Warehouse Cloud based Analytic applications in mobile app
+     [Prompting] Multiselect option in Member selector for variables type "selection option" and "interval"
+     SQL Live using DWC
+     Display Comment Column at head of table (vs.tail)
+     Display description of Teams in sharing workflow
+     Phase 2 - Functional and formatting inconsistencies across different elements in stories
+     Allow designer to show/hide version category in the axis description
+     Hide "Show inactive values" in input controls
+     BW Live - Ability to display result with more than one value
+     Option to rename Level Hierarchies in SAC (live connection)
+     Add New R Packages To SAC Pre-Installed R Servers
+     [Reporting] Layout : Corporate template
+     Analytics Designer createMembers Overwrite
+     SAC Security Role - Data Access Control - Hierarchy Level not available
+     Previous and Next from Advance scripting are not woking with values from Memberset
+     SAC Marketing email Pop-up doesn't appear in SSO
+     Import Data Connections - shared ownership
+     Show connection information in Data Management list
+     Can't remove SAC measure
+     Story Variable text/Input Control not translated automatically [BW/4 Live]
+     [BW Live] Text in hierarchies for characteristics without text
+     [BW Live] Allow to remove 2nd structure from Table
+     Reuse the Embedded Content in SAC Enterprise
+     BHP: user can edit and copy&paste cross dimension attribute in table
+     [Reporting] Section : Apply a SORT on the Section instances
+     [Reporting] Section : Collapse expand
+     [Reporting] Section : Repeat section heading (dependency on growing table in section)
+     [Reporting] OEM - table without measure (List view support) and re-engineering
+     [Reporting] Layout : Navigation side bar
+========================================
+Cluster 3 details:
+--------------------
+Key features: ['model', 'request', 'data', 'what', 'dimension']
+data in this ml:
+     Configure a dimension as a primary key for a model
+     Allowing integer IDs for better Model Linking
+     Import Job Schedules Multiple retry attempts
+     Option to persist calculated measures or account formulas
+     Importing: unmap all option
+     Allow Parent-Child and Level Based hierarchy together in a dimension
+     Delete Import Job Requests
+     Have a Refresh Data button for Dimension Workspaces
+     Advanced Formulas - Support different time granularity based aggregation for remote model
+     Support import jobs into Universal Model from WFA
+     Keep Style formatting when sharing tasks in SAC Calendar
+     Ability to delete story from 'Delete Model' / 'Models with dependencies' dialog
+     Dimension property type management
+     Dimension property data types
+     linking model dimension with property
+     Dynamic disaggregation based on other set of data like data A being disaggregated based on data B
+     Thresholds in Tables of New Model Type
+     Change model owner
+     Customize planning area in Data Action/Multi Action
+     As a Predictive Planning end-user, I would like to automate the production of predictive forecasts till the end of current year
+     Allow time dimension range to be reduced according to booked data
+     Public Time dimension
+     Key and description for properties
+     Data Export Service Open API for analytical model (live connection/model)
+     SAC Calendar - Mass Modify task details
+     Public dimension used as attributes in another public dimension - with nested Data Access Control
+     Planning - dimension combination rule, 5 rules per model, 5 dimensions per rule, 3 million combinations per rule
+     Validation Rules - # member shoud support validation rule with All members of MATCHED dimension
+     Enable property edit from table
+     SUPPORT QUESTION Missing Functionality with New Models in Story
+     Enable converting a private dimension into a public dimension
+     Require Greater than or Less Than operators for Date conditions in Query's for Import Jobs
+     Support change of Data Type and Semantic Type for properties
+     Create Version & add properties from a single interface on multiple models
+     Use 'Version' as model variable
+     Define different validation rules per measure
+     Could we disable Validation Rules instead of Deleting them
+     Different validation rules for different versions / time periods
+     Cross-model copy step from a classic model to a new model
+     Revert & Restore options - Model Rollback
+     SAC Planning Calendar Tasks Submit without Publish
+     Maintain planning ability when a planning model is linked to a reporting model
+     Allow User to handle Master Data Inconsistencies
+     Provide Linked Models support for GeoMap
+     Display detailed connection information for import jobs
+     Display used connection(s) for models
+     Non-Enforcement of Dimension Metadata Validation
+     Provide selected Import Settings in timeline for Data Management of an SAC Model
+     Union operation in combine model
+     Combine Data in Universal Model
+     Blended models should be able to aggregated according to common dimension properties - similar to
+     Further Variable Manipulations in Data Actions for Better and Optimized Coding
+     Off-Calendar Scheduling
+     Blending Live Data Model with Public Dimension
+      Create one import connection pointing to multiple database in the same host
+     Widget to Display Data Refresh Import Time Stamp
+     Flexibility to have multiple primary key combination on a Public Dimension
+     Mutl-measure support at the Resultset Structure when use live connection with DWC
+     Time Hierarchy does not support a full date range
+     Missing properties / attributes for dimension in a Story (Live Connection)
+     Clone story, with model swap option
+     New model wrangler, import setting version should be updatable
+     Allow other user to refresh model when Reset Model button is on
+     Support for Hierarchies with Linked Nodes for BW Import Connection
+     Import only a subset of the dimensions of a model from multiple sources (JOIN load)
+     SAC Dimension data - Export capability
+     LINKING MODELS FAILS -- NEED ADDITIONAL LINK CLARIFICATION / DETAIL
+     Add Fiscal Year Option to the Model Data Export dialogue
+     Import profile for user??????s data imports (csv,
+     Modeler/Data Management: Move Export jobs section above Import jobs
+     Access to the error messages of Data Export Job
+     Link dimensions accross Import model and BW Live model on compounded BW objects
+     Allow OData Services to use Headers when connecting to data
+     Blending with models based on Universes
+     High-performant (t-SQL) read mode for models with high nr. of dimensions
+     Hot Wrangling
+     Sort Order of Master Data
+     Automatic refresh of currency conversion tables (via load job)
+     Rounding behavior when exporting data from SAC to S/4HANA needs to be fixed
+     Timestamp column should be flexible in SAC to adjust format
+     Language Parameter Support for ByD connections
+     Grouping of measures in the model (like available for dimensions)
+     PARQUET as Import/Export file format
+     Support mapping to multiple attributes during import job wrangling for dimension metadata
+     Delete All Button For Data Load Log Entries
+     Dimension Property Lookup in Model Data Import
+     Increase the maximum character length for Properties
+     Avoid <Root> by default for Parent-Child hierarchy on public dimension when I import data
+     User can edit public model even without rights to save to public folder
+     Fix Data Locking on Restricted Measures
+     Revert & Restore options
+     To allow, in Reports, to show ONLY valid dimension combinations set in Validation Rules tab
+     Improve perfomance of loading model if many historical job entries are saved
+     Reference Public Dimension
+     Load Job Groups
+     Create model from file/data sources, use fiscal time
+     Increase Export Size Limit beyond 6 million records
+     Replace date, version , accounts dimension in a model
+     DWC Tables and Views as a Start point for Wrangling
+     Writeback from SAC plan model to ACDOCP - map user creating the plan values
+     Copy Import/Export jobs from one model to another
+     Bulk upload of dimension members in the model by Planning standard users
+     Version grouping and archiving
+     Enhance Cross-Model-Copy step in data actions
+     Recognize Custom Date in data action parameter
+     Possibility to sort measures in tables (based on new data model)
+     Plan on (copy-paste) multiple new lines in a table
+     option to find and replace user in planning calendar
+     Data Action to run with administrator priviledges
+     Reusable variables schema for Import Jobs and Scheduling
+     SAC navigation
+     SAC Planning - Data Point Commenting - variable / dimension property
+========================================
+Cluster 4 details:
+--------------------
+Key features: ['chart', 'analyzer', 'data', 'bar', 'charts']
+data in this ml:
+     Data Analyzer for SAC embedded for LOBs - Phase1
+     [Accessibility] Enable reset of color assigned to measure
+     [Accessibility] Separate Pattern Assignment for Measures from Color selection
+     Blending and Waterfall Chart
+     Pause Data Refresh in SAC Story in Edit Mode
+     'Pause Data Refresh' feature for SAC Data Analyzer in Edit Mode
+     Navigation Panel should support Chart as well
+     MVS for Explorer replacement
+     Data Analyzer for SAC embedded for LOBs - Phase2
+     FR: Keep defined chart design in Template
+     in Optimized View - Variance is green in View mode and Red in Edit
+     After value change in a filter a histogram brakes
+     Year in Axis in reverse order (Stacked Area chart type)
+     More advanced customizing capability for SAC Charts
+     PLD Story Migration to OVM is failing with error
+     Tree Map: Label disappearing instead of being truncated
+     [Data Analyzer] Chart configuration and modification
+     Chart Specific Attribute/Measure Name
+     Multiple sorting in a chart
+     Chart Alignment when setting chart scaling bar width
+     Manage order of element in a waterfall chart
+     Two Y axis in bar/column charts
+     Make bar width smaller than 5px / adjust chart to be displayed without horizontal scrollbar
+     Linked analysis at dimensions level in a chart
+     Data Label collision detection & coloring in line charts
+     Tooltip charts for other visualization types
+     Quick and easy RESET STYLE button in the Styling panel.
+     CHART - CUSTOMIZATION OF THE DATA LABEL
+     Make sure that sorting works for stacked bar charts
+     Feature "Compact View" availble also in the Story
+     mandatory version in charts
+     [Data Analyzer] Interop: copy/paste to story/app (clipboard feature)
+     [Data Analyzer] Ability to open Data analyzer from story explorer view
+     More formatting/styling options in visualizations
+     [BW Live] Numeric Point Chart - improved support of 2 Structure query
+     Completed view of axis label via increase the number of  characters in label
+     [BW Live] Bubble Chart 2 Structures Support
+     BW Live: data not shown in stacked bar chart scaled to 100%
+     Reset and Reload - same icon used on UI for 2 different functions
+========================================
+Cluster 5 details:
+--------------------
+Key features: ['dwc', 'data', 'sac', 'live', 'model']
+data in this ml:
+     [DPS] Fiscal Year / Period Support for DWC
+     [Filtering across Models] Linked analysis for DWC models across DWC Spaces not supported
+     Replication-free planning SAC New Model in Data Warehouse Cloud
+     Ability to manually 'load new snapshot' of DWC persistency from within SAC story
+     Hide widgets from SAC story if there is no data
+     Move planning model design & persistency to DWC or HC
+     [Filtering across Models] Linked analysis for DWC models with BW or HANA Live
+     Link Dimensions/Blending between DWC and SAC Live BW connections
+     Native SAC / DWC integration
+     Unifying Access to different remote model types
+     Reuse DWC dimensions in SAC models (New Model)
+     Support Cross Calculations with DWC
+     [DPS] Managing of booked/unbooked values in DWC Models
+     Data blending for live connections/DWC
+     [DPS] Support Commenting WIdget on DWC
+     CE: DWC General integration
+     Create composite Roles for SAC and DWC
+     Reuse/Support SAC models (New Model) and semantics in DWC
+     Data point commenting for DWC Live
+     Shared Dimension Metadata between SAC and DWC
+     Shared Fact Tables between SAC and DWC
+     [DWC / SAC / Time] Remove Naming Conventions for Time Dimensions
+     Blending DWC Live with BW Live (through DWC Engine)
+     CE: DWC remaining capability gaps
+     CE: Blending with DWC
+     Support R-visualizations with DWC
+     Create a DWC blend through SAC story workflow
+     Support Half-year Date hierarchies with DWC
+     Change Date labelling of DWC models
+     [DPS] Support External Hierarchies from DWC
+     Private Link support.
+     CE: Future DWC Integration - Migration
+     Sorting Based on DWC Model
+========================================
+Cluster 6 details:
+--------------------
+Key features: ['api', 'story', 'create', 'new', 'sac']
+data in this ml:
+     Enable http-API connection for use in Analytics Designer/Story 2.0
+     Live data API call to any GCP REST/ODATA API ( Outside of SAP BW )
+     API setModel should support chart visualisation
+     Script API for Cross calculation dimension manipulation
+     Script API supports for Undo/Redo
+     Data Import API
+     Availability of permission API externally
+     Import API for Universal Models
+     Group Reporting Transactional Data - API SAC Connection from S/4
+     API - Save Story
+     API - Create New Filter in Story
+     API - Create New Rank in widget
+     API - Create New Sort in widget
+     API - Create New Calculation in Story
+     API - Create New Section in Story
+     API - Create New Page in Story
+     API - Format Table or Viz in Story
+     API - Create New Table or Viz in Story
+     API - Create Story
+     Support setDimensionFilter() API for filter line widget in group filter mode
+     SCIM API's Enhancements
+     SCIM API to manage (create/read/update/delete) data access controls on models
+     URL API does not consider special characters like '/'
+========================================
+Cluster 7 details:
+--------------------
+Key features: ['horizon', 'theme', 'fiori', 'widget', 'binding']
+data in this ml:
+     [Fiori Horizon] Support for view and embed toolbars/dialogs/menus
+     Enable Fiori Horizon for SAC
+     [Fiori Horizon] OEM Story Canvas Support
+     [Fiori Horizon] Support Horizon themes for Story Canvas
+     [Fiori Horizon] Create and deliver Fiori Canvas themes to all tenants
+     [Fiori Horizon] Drop Shadow Support
+     [Fiori Horizon] Stories color picker with new horizon defaults
+     [Fiori Horizon] Enterprise Story Canvas Support
+     [Fiori Horizon] Style RSS Readers in line with Fiori Horizon
+     [Fiori Horizon] Style Geo Maps in line with Fiori Horizon
+     [Fiori Horizon] Style Tables in line with Fiori Horizon
+     [Fiori Horizon] Style Clocks in line with Fiori Horizon
+     [Fiori Horizon] Enhanced Styling for Calculation Input Controls and Input Controls
+     [Fiori Horizon] Style Widget Border Settings in Theme Preferences
+     [Fiori Horizon] Style Widget Background Color in Theme Preferences
+     [Fiori Horizon] Support 72 black font style in Stories
+     [Accessibility/Horizon] Style Threshold as part of a Theme
+     [Accessibility] Accessibility Compliance for Story Canvas Theming
+     [Accessibility] Enhanced Comment Widget styling as part of theme
+     Linked Analysis support for custom widget
+     [Story2.0]Support Theme
+     calculated Dimension/restricted Dialog feature with Custom Widget Data Binding
+     Totals and Subtotals are missing with Custom Widget Data Binding
+     Interaction of Custom Widget Data Binding with Bookmark and Linked Analysis
+     Enable The Dimension Filter with Custom Widget Data Binding via the Builder Panel
+     Interaction of Custom Widget Data Binding with Filter Line
+     Interaction of Custom Widget Data Binding with Input Control
+     calculated measures/restricted Dialog feature with Custom Widget Data Binding
+========================================
+Cluster 8 details:
+--------------------
+Key features: ['filter', 'story', 'hierarchy', 'filters', 'user']
+data in this ml:
+     option for first value selection by default for Single selection filter / Input Control in SAC Story
+     SAC Filter Bug
+     Export jobs fail to display filter information
+     OEM Integration for Story 2.0
+     Label for Hyperlinks don't show dates
+     Time series Chart - empty when you filter for only one data point
+     Hide story filter icon and Hide dimensions that can be used as story filter
+     Copy & paste in widget filters
+     Integrating Dibo use case into Story 2.0
+     Opening input control / story filter with many members takes a very long time
+     time hierarchy filter by member: default value last month
+     Flexible input parameter
+     As a Predictive Planning end-user, I would like to create filters in Predictive Scenarios decoupled from the entities
+     Analytical Application (Sales Data Analyzer, Generic Template) Filter effects selection of other Filter
+     Dynamic filter on time
+     [Filter Across Models] Ability to choose whether indirect filtering should be applied
+     Copy filters from one widget to another
+     Collection Epic for GA Release of "Story 2.0"
+     Collection Epic for Beta Release of "Story 2.0"
+     Provide script APIs for input control
+     Restricted Key Figures based on Semantic Tag dimension does not push down filter in MDS calls to backend DWC data sources
+     [BW Live] BW Variables should also show ID in the filter panel
+     Access and use different hierarchy levels in Advanced Formulas
+     [Story2.0]Filterbar integration
+     [Story2.0]Support story page
+     Manual Migration from stories/apps on classic mode to story 2.0
+     DWC Story Filter on Range does not allow members which do not exist
+     Integrated Design Time
+     SAC Story - Having cascading effect between filter in Builder and input control in page
+     Advance filter in Restricted Measure
+     Offer option for changing the filter "deselection behavior" in case of inactive values
+     Support month & week in time hierarchy with HANA live - YMWD
+     Option to display the correct month and year in dynamic text based on selection made in Story Filter
+     Story filter new behavior in linked analysis
+     Story Filter and Page Filter - Pause for Query Refresh
+     Unable to filter story using Version attribute
+     Select/deselect click combination between charts should work in Linked Analysis
+     Dynamic text with formula
+     Financial Year Representation
+     Weekly Filter on the the story
+     Hierarchy Story Filter- Hierarchy members incorrect sorting.
+     Filtering the input control list of values dynamically
+     Ability to customize "Current Date" story filter with offset
+     Possibility of change hierarchy in Story Filter
+     Time dependent hierarchies for live data connections
+     Handover of variable values
+     Add dynamic and fixed range imput controls for date dimensions in one single imput control
+     Filters for dimensions with a hierarchy show top node of the hierarchy instead of ALL
+     Add a Filter to Entire Digital Boardroom
+     Provide CLEAR and APPLY buttons in SAC story Page filters
+     Allow user to select the hierarchy in an input control
+     More filter options on dimensions (Contains, Like, Equal to)
+     Story Filter: Extended Date Picker (Element) with auto select Yesterday/Today
+     Possibility to hide "not assigend" node in page/story filters based on hierarchies
+     Pause/Resume refresh option to be available on Page & Story filters
+     [DAC] - "Hide Parents'  should work without 'ALL' selection in filter
+     Passing Hierarchy from Page/Story Filter to Data Actions
+     URL API - Parameter to filter by Dimension property
+     Story filter gets hidden on moving to Fullscreen mode
+     Value help in master data import job does not list all values
+     Filters/Input Controls - Different options for quick filtering using dimension attributes
+     Page Filter / Input Control - Cascading Effect
+========================================
+Cluster 9 details:
+--------------------
+Key features: ['modeling', 'variance', 'top', 'calculations', 'smart']
+data in this ml:
+     Predictive Analytics to be made available for other SAC tenants apart from GCP
+     Variance when using Account drill-down (Measure-based model)
+     [C_E2E][C_PLAN]When smart prediction is opened in story one more main menu appears inside the story. So we can run one more mini application inside story
+     Running Total calculations
+     Modeling - Data Integration
+     Modeling - Wrangling
+     Modeling - Cube Mgmt.
+     Modeling - Calculations
+     Modeling - MDM
+     Change Variance in View time
+     Total count for selected Dimension should be visible in Rank Option
+     Ability to create Variance using a Story or Page input control/filters for comparison
+     IBCS trend line variance chart integrated
+     Ability to adjust the scaling of variance on KPI tile
+     SAP Influence Top 10 - Connectivity
+     Forecast layout: support comparizon with other versions (display and variance calculations
+     Build story on Data Change Insights result data
+     SAP Influence Top 10 - Modeling
+     Smart Insights - Support Top Contributors for variance on calculations
+     Copy individual influencers, simulation and unexpected values with predictive data from Smart Discovery
+     Predictive Alerting
+     Enhance constant currency reporting
+     [BW Live] Variance 2 Structures Support
+
