@@ -1,6 +1,6 @@
 TRAINING_DATA_FILE = "data/jira_d1.csv"
-CONTENT_COLUMN = "Summary"
-CONTENT_COLUMN_2 = "Description"
+CONTENT_COLUMN_SUMMARY = "Summary"
+CONTENT_COLUMN_DESCRIPTION = "Description"
 ID_COLUMN = "Summary"
 
 # TRAINING_DATA_FILE = "data/data.csv"
@@ -9,3 +9,5 @@ ID_COLUMN = "Summary"
 # ID_COLUMN = "title"
 
 ML_NEW_CONTENT_COLUMN = "ml_content"
+ML_CLUSTER_ID_COLUMN = "Cluster"
+ML_FEATURE_NAME1_COLUMN = "Feature_name"

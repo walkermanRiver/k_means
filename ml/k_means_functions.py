@@ -1,7 +1,6 @@
 # -*- coding: UTF-8 -*-
 import pandas as pd
 import numpy as np
-# import os
 from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
 from sklearn.manifold import MDS
@@ -10,7 +9,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from matplotlib.font_manager import FontProperties
 
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
-from ml import training_data_feature_constant
+from ml import training_data_feature_constant as const_value
 
 
 def build_feature_matrix(documents, feature_type='frequency',
@@ -42,40 +41,72 @@ def k_means(feature_matrix, num_clusters=10):
     return km, clusters
 
 
-def get_cluster_data(clustering_obj, training_data,
-                     feature_names, num_clusters,
-                     topn_features=10):
-    cluster_details = {}
-    # 获取cluster的center
+# def get_cluster_data(clustering_obj, training_data,
+#                      feature_names, num_clusters,
+#                      topn_features=10):
+#     cluster_details = {}
+#     # 获取cluster的center
+#     ordered_centroids = clustering_obj.cluster_centers_.argsort()[:, ::-1]
+#     # 获取每个cluster的关键特征
+#     # 获取每个cluster的id
+#     for cluster_num in range(num_clusters):
+#         cluster_details[cluster_num] = {}
+#         cluster_details[cluster_num]['cluster_num'] = cluster_num
+#         key_features = [feature_names[index]
+#                         for index
+#                         in ordered_centroids[cluster_num, :topn_features]]
+#         cluster_details[cluster_num]['key_features'] = key_features
+#
+#         # books = training_data[training_data['Cluster'] == cluster_num]['title'].values.tolist()
+#         data_id = training_data[training_data[const_value.ML_CLUSTER_ID_COLUMN] == cluster_num][
+#             const_value.ID_COLUMN].values.tolist()
+#         cluster_details[cluster_num]['data_id'] = data_id
+#
+#     return cluster_details
+
+
+def get_result_with_key_feature(clustering_obj, training_data,
+                                feature_names, num_clusters,
+                                topn_features=10):
+    result_data = training_data
+    result_data[const_value.ML_FEATURE_NAME1_COLUMN] = None
+
+    # # 获取cluster的center
     ordered_centroids = clustering_obj.cluster_centers_.argsort()[:, ::-1]
-    # 获取每个cluster的关键特征
-    # 获取每个cluster的id
+    # # 获取每个cluster的关键特征
+    # # 获取每个cluster的id
     for cluster_num in range(num_clusters):
-        cluster_details[cluster_num] = {}
-        cluster_details[cluster_num]['cluster_num'] = cluster_num
         key_features = [feature_names[index]
                         for index
                         in ordered_centroids[cluster_num, :topn_features]]
-        cluster_details[cluster_num]['key_features'] = key_features
 
-        # books = training_data[training_data['Cluster'] == cluster_num]['title'].values.tolist()
-        data_id = training_data[training_data['Cluster'] == cluster_num][training_data_feature_constant.ID_COLUMN].values.tolist()
-        cluster_details[cluster_num]['data_id'] = data_id
+        current_cluster_data_index = training_data[training_data[const_value.ML_CLUSTER_ID_COLUMN]
+                                                   == cluster_num].index.to_list()
+        training_data.loc[current_cluster_data_index, const_value.ML_FEATURE_NAME1_COLUMN] \
+            = key_features[0]
 
-    return cluster_details
+    return result_data
 
 
-def print_cluster_data(cluster_data):
-    # print ml details
-    for cluster_num, cluster_details in cluster_data.items():
-        print('Cluster {} details:'.format(cluster_num))
-        print('-' * 20)
-        print('Key features:', cluster_details['key_features'])
-        print('data in this ml:')
-        for id_Str in cluster_details['data_id']:
-            print("     " + id_Str)
-        # print(', '.join(cluster_details['data_id']))
-        print('=' * 40)
+# def print_cluster_data(cluster_data):
+#     # print ml details
+#     for cluster_num, cluster_details in cluster_data.items():
+#         print('Cluster {} details:'.format(cluster_num))
+#         print('-' * 20)
+#         print('Key features:', cluster_details['key_features'])
+#         print('data in this ml:')
+#         for id_Str in cluster_details['data_id']:
+#             print("     " + id_Str)
+#         # print(', '.join(cluster_details['data_id']))
+#         print('=' * 40)
+
+
+# def print_cluster_data_table(cluster_data):
+#     # print ml details
+#     for cluster_num, cluster_details in cluster_data.items():
+#         for id_Str in cluster_details['data_id']:
+#             print(id_Str + "," + cluster_details['key_features'][0])
+#         # print(', '.join(cluster_details['data_id']))
 
 
 def plot_clusters(feature_matrix,
