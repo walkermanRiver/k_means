@@ -1,4 +1,4 @@
-TRAINING_DATA_FILE = "data/jira_d1.csv"
+TRAINING_DATA_FILE = "data/jira_d2.csv"
 CONTENT_COLUMN_SUMMARY = "Summary"
 CONTENT_COLUMN_DESCRIPTION = "Description"
 ID_COLUMN = "Summary"

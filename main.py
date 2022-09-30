@@ -13,8 +13,15 @@ print(training_data.head())
 print("csv数据", os.linesep, training_data)
 
 
-merged_content = training_data[const_value.CONTENT_COLUMN_SUMMARY].map(str). \
-        str.cat([training_data[const_value.CONTENT_COLUMN_DESCRIPTION]], sep=' ')
+merged_content = training_data[const_value.CONTENT_COLUMN_SUMMARY].map(str).\
+    str.cat([training_data[const_value.CONTENT_COLUMN_DESCRIPTION]], sep=' ')
+
+merged_content = merged_content.map(str).str.cat([training_data["Component1"]], sep=' ')
+merged_content = merged_content.map(str).str.cat([training_data["Component2"]], sep=' ')
+merged_content = merged_content.map(str).str.cat([training_data["Component3"]], sep=' ')
+merged_content = merged_content.map(str).str.cat([training_data["Component4"]], sep=' ')
+merged_content = merged_content.map(str).str.cat([training_data["Component5"]], sep=' ')
+merged_content = merged_content.map(str).str.cat([training_data["Component6"]], sep=' ')
 data_content = merged_content.tolist()
 
 
